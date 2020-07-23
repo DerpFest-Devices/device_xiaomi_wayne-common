@@ -48,6 +48,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-qcom-normal-prod.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-qcom-normal-prod.conf \
     $(LOCAL_PATH)/configs/thermal-engine-qcom-gaming-prod.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-qcom-gaming-prod.conf
 
+# Thermal
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal.conf \
+    $(LOCAL_PATH)/configs/thermal/thermal-engine-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-video.conf
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
